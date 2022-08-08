@@ -34,7 +34,7 @@ public class Room implements IRoom {
     }
 
     public String toString() {
-        return "The room number is: " + roomNumber + "The room type is: " + enumeration
-                + "The room price is: " + price;
+        return "The room number is: " + roomNumber + " The room type is: " + enumeration
+                + " The room price is: " + price;
     }
 }

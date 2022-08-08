@@ -36,8 +36,9 @@ public class MainMenu {
                             break;
                         case '4':
                             Admin.admin();
+                            break;
                         case '5':
-                            System.out.println("Exit\n");
+                            System.out.println("Exiting the program......\n");
                             break;
                         default:
                             System.out.println("Unknown action\n");
