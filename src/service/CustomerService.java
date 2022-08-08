@@ -2,13 +2,10 @@ package service;
 
 import model.Customer;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashSet;
+import java.util.*;
 
 public class CustomerService {
-    Collection<Customer> customers =  new HashSet<Customer>();
+    private Map <String, Customer> customers = new HashMap<String, Customer>();
     private static CustomerService customerService = null;
 
     private CustomerService() {}
@@ -20,20 +17,14 @@ public class CustomerService {
     }
 
     public void addCustomer(String email, String firstName, String lastName) {
-        Customer customer = new Customer(firstName, lastName, email);
-        customers.add(customer);
+       customers.put(email, new Customer(firstName, lastName, email));
     }
     public Customer getCustomer(String customerEmail) {
-        for (Customer customer : customers) {
-            if (customer.getEmail().equals(customerEmail)) {
-                return customer;
-            }
-        }
-        return null;
+        return customers.get(customerEmail);
+    }
+    public Collection<Customer> getAllCustomers() {
+        return customers.values();
     }
 
 
-    public Collection<Customer> getCustomers() {
-        return customers;
-    }
 }
