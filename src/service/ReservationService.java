@@ -73,6 +73,4 @@ public class ReservationService {
         }
         return all;
     }
-
-    return fuck yea
 }
