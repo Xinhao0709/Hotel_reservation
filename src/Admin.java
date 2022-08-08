@@ -62,6 +62,9 @@ public class Admin {
 
                     }
                 }
+                else {
+                    System.out.println("Invalid Input\n Enter Number from 1-5\n");
+                }
             } while (command.charAt(0) != '5' || command.length()!= 1);
         } catch (StringIndexOutOfBoundsException ex) {
             System.out.println("Empty input\n Exiting hotel reservation program\n");

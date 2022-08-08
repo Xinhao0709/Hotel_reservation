@@ -7,9 +7,9 @@ public class Customer {
     private String lastName;
     private String email;
     private final String emailRegex = "^(.+)@(.+).com$";
-    private final Pattern pattern = Pattern.compile(emailRegex);
     //check the email, throw an illegalArgumentException
     public Customer (String firstName, String lastName, String email) {
+        Pattern pattern = Pattern.compile(emailRegex);
         if(!pattern.matcher(email).matches()) {
             throw new IllegalArgumentException("Error, Invalid email");
         }

@@ -77,10 +77,10 @@ public class MainMenu {
     private static void findAndReserveRoom() {
         final Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter Check-In Date mm/dd/yyyy example 02/01/2020");
+        System.out.println("Enter Check-In Date mm/dd/yyyy example: 02/01/2020");
         Date checkIn = getInputDate(scanner);
 
-        System.out.println("Enter Check-Out Date mm/dd/yyyy example 02/21/2020");
+        System.out.println("Enter Check-Out Date mm/dd/yyyy example: 02/21/2020");
         Date checkOut = getInputDate(scanner);
 
         if (checkIn != null && checkOut != null) {
@@ -203,7 +203,6 @@ public class MainMenu {
             System.out.println("Error: Invalid date.");
             findAndReserveRoom();
         }
-
         return null;
     }
 
