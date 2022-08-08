@@ -51,9 +51,6 @@ public class MainMenu {
         }
     }
 
-
-
-
     public static void createAccount() {
         Scanner scanner = new Scanner(System.in);
 
@@ -147,6 +144,7 @@ public class MainMenu {
             }
         }
     }
+
     private static void reserveRoom(Scanner scanner, Date checkIn, Date checkOut,
                                     Collection<IRoom> rooms) {
         System.out.println("Would you like to book a room y/n \n");
@@ -188,6 +186,7 @@ public class MainMenu {
             reserveRoom(scanner, checkIn, checkOut, rooms);
         }
     }
+
     private static void printRooms(Collection<IRoom> rooms) {
         if(rooms.isEmpty()) {
             System.out.println("No room is found.\n");
@@ -206,7 +205,6 @@ public class MainMenu {
 
         return null;
     }
-
 
     public static void seeMyReservations() {
         Scanner scanner = new Scanner(System.in);
