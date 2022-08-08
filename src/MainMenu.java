@@ -35,7 +35,7 @@ public class MainMenu {
                             createAccount();
                             break;
                         case '4':
-                            //NEED TO IMPLEMENT Admin
+                            Admin.admin();
                         case '5':
                             System.out.println("Exit\n");
                             break;

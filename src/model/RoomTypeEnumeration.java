@@ -1,8 +1,6 @@
 package model;
 
-public class RoomTypeEnumeration {
-    enum Stoplight {
+public enum RoomTypeEnumeration {
         SINGLE,
         DOUBLE
-    }
 }
